@@ -60,7 +60,10 @@ block of the next CSS rule:
 
 /* ------- Sections ------- */
 
-/* Task 5: Our page consists of two sections that contain information about why Pokémon are cool and what the favorite Pokémon are. Let's style these sections:
+/* Task 5: Our page consists of two sections that 
+contain information about why Pokémon are cool and 
+what the favorite Pokémon are. Let's style these 
+sections:
 
 - We want to have a white background for our sections
 - Add a padding of 20px and a margin of 10px
@@ -70,6 +73,9 @@ block of the next CSS rule:
 
 section {
   /* your solution */
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
 }
 
 /* ------- Headings Part 2 ------- */
