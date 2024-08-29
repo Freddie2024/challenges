@@ -6,13 +6,11 @@
   the park should be pale yellow box with a dashed border.
 */
 
-/*
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-*/
 
 .park {
   margin: 16px;
@@ -31,6 +29,10 @@
     The size of the emojis is controlled via the font size.
     Set the font size to 32px.
   */
+}
+
+.giraffe {
+  text-align: center;
 }
 
 /*
