@@ -6,11 +6,13 @@
   the park should be pale yellow box with a dashed border.
 */
 
+/*
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+*/
 
 .park {
   margin: 16px;
@@ -22,6 +24,7 @@
 
 .animal {
   padding: 16px;
+  font-size: 32px;
 
   /*
     The animals are very small.
