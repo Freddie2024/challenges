@@ -11,7 +11,7 @@ is calculated when working with CSS. Do you know how to switch from
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 /* your solution */
@@ -20,7 +20,7 @@ is calculated when working with CSS. Do you know how to switch from
 all elements of your code via inheritance. Which selector do we need for this? */
 
 /* add selector */
-*  {
+body  {
   font-family: monospace;
   font-size: 1rem;
   line-height: 1.5;
@@ -52,7 +52,7 @@ block of the next CSS rule:
 
 .title {
   background-color: white;
-  margin-top: 0;
+  /* margin-top: 0; */
   padding: 10px;
   text-align: center;
   /* your solution */
@@ -111,8 +111,14 @@ should be "orange". Hint: You may need another CSS rule.
   border-right: 3px solid;
   border-color: gold;
   padding: 20px;
-  display:inline;
+  /* display:inline; */
 }
+
+
+.favourites .subtitle {
+ border-color: orange;
+}
+
 
 /* ------- List ------- */
 
