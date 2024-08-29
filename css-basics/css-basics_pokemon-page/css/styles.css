@@ -4,8 +4,9 @@ adjust the HTML to solve the tasks. */
 
 /* ------- General Styles ------- */
 
-/* Task 1: First of all we want to adjust how the size of our elements 
-is calculated when working with CSS. Do you know how to switch from 
+/* Task 1: First of all we want to adjust how the size 
+of our elements is calculated when working with CSS. 
+Do you know how to switch from 
 "content-box" to "border-box"? */
 
 * {
@@ -16,8 +17,9 @@ is calculated when working with CSS. Do you know how to switch from
 
 /* your solution */
 
-/* Task 2: Let's work on some basic stylings that we want to apply to 
-all elements of your code via inheritance. Which selector do we need for this? */
+/* Task 2: Let's work on some basic stylings that we 
+want to apply to all elements of your code via 
+inheritance. Which selector do we need for this? */
 
 /* add selector */
 body  {
@@ -73,7 +75,8 @@ color "orange" that is only visible on the left.
 Hint: Use "border-left". :)
 
 - Bonus:  The left border of the second section which 
-contains a list of favourite Pokémon should have the color "gold". Hint: You may need a second CSS rule.
+contains a list of favourite Pokémon should have the 
+color "gold". Hint: You may need a second CSS rule.
 */
 
 section {
@@ -83,6 +86,10 @@ section {
   margin: 10px;
   border-left: solid 5px;
   border-color: orange;
+}
+
+section.favourites {
+  border-color: gold;
 }
 
 /* ------- Headings Part 2 ------- */
@@ -122,17 +129,19 @@ should be "orange". Hint: You may need another CSS rule.
 
 /* ------- List ------- */
 
-/* Task 7: Last but not least! We want to style our list with our favorite Pokémon. Which selector do we need? And also add values for the padding. */
+/* Task 7: Last but not least! We want to style our 
+list with our favorite Pokémon. Which selector do we 
+need? And also add values for the padding. */
 
 /* add selector */
- {
+ ul {
   list-style: "🧡";
-  padding-left: /* add value */ ;
+  padding-left: 20px ;
 }
 
 /* add selector */
- {
-  padding-left: /* add value */ ;
+ ul li{
+  padding-left: 10px ;
 }
 
 /* ------- The End -------- */
