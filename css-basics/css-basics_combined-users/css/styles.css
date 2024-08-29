@@ -115,3 +115,8 @@ aside .location {
 ul .user .bio {
   display: none;
 }
+
+ul .user .location {
+  text-align: left;
+  color: darkslategray;
+}
