@@ -1,8 +1,16 @@
-/* The exercise will start here! Sometimes you may need to add a class attribute to some elements in your HTML structure, but otherwise it won't be necessary to adjust the HTML to solve the tasks. */
+/* The exercise will start here! Sometimes you may need to add a class attribute 
+to some elements in your HTML structure, but otherwise it won't be necessary to 
+adjust the HTML to solve the tasks. */
 
 /* ------- General Styles ------- */
 
-/* Task 1: First of all we want to adjust how the size of our elements is calculated when working with CSS. Do you know how to switch from "content-box" to "border-box"? */
+/* Task 1: First of all we want to adjust how the size of our elements 
+is calculated when working with CSS. Do you know how to switch from 
+"content-box" to "border-box"? */
+
+* {
+  box-sizing: content-box;
+}
 
 /* your solution */
 
