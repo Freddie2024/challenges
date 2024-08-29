@@ -88,6 +88,14 @@ aside .user {
   border-radius: 4px;
 }
 
+aside .name {
+  font-size: 16px;
+}
+
+aside .bio {
+  font-size: 12px;
+}
+
 /*
   Part 2
 
