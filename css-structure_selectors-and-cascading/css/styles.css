@@ -111,7 +111,7 @@ p, .list {
 }
 
 /* 10. These styles should apply to the paragraph in the footer */
-FIX_ME {
+footer p {
   outline: 2px dashed red;
   color: #ffffff;
 }
