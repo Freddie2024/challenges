@@ -147,8 +147,10 @@ need? And also add values for the padding. */
 /* ------- The End -------- */
 
 .image-fluid {
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
-/* Note: After finishing all tasks this class should also work. This means that the image should flexibly adjust its size to the width of the viewport. */
+/* Note: After finishing all tasks this class should 
+also work. This means that the image should flexibly 
+adjust its size to the width of the viewport. */
