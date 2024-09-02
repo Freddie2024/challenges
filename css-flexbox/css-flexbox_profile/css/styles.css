@@ -39,7 +39,7 @@ body {
   border-radius: 50%;
   max-width: 50%;
   height: auto;
-  justify-content: center;
+  align-self: center;
 }
 
 .tech-stack__list {
