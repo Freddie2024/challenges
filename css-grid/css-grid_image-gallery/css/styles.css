@@ -58,19 +58,19 @@ body {
 
 .teaser-grid__teaser--spring {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://source.unsplash.com/random/600x300?spring");
+    url("../images/1000_F_559416996_JgBW9B9DAyaBgyKJfxoOXSAUg44atD33.jpg");
 }
 .teaser-grid__teaser--summer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://source.unsplash.com/random/600x300?summer");
+    url("../images/summer.jpg");
 }
 .teaser-grid__teaser--autumn {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://source.unsplash.com/random/600x300?autumn");
+    url("../images/autumn.jpg");
 }
 .teaser-grid__teaser--winter {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://source.unsplash.com/random/600x300?winter");
+    url("../images/winter.jpg");
 }
 
 .teaser-grid__link {
