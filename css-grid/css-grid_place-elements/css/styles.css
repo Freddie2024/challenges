@@ -83,6 +83,8 @@ body {
 
 .element-2 {
   /* Add styles here */
+  grid-column-start: 5;
+  grid-column-end: -1;
 }
 
 .element-5 {
