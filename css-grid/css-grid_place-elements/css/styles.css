@@ -95,6 +95,7 @@ body {
 
 .element-8 {
   /* Add styles here */
+  grid-row: span 2;
 }
 
 .element-spiced {
