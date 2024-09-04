@@ -41,6 +41,8 @@ body {
 .teaser-grid {
   min-width: 40rem;
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   /* Add styles to the grid container */
 }
