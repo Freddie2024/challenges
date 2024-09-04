@@ -77,10 +77,8 @@ body {
 
 .element-1 {
   /* Add styles here */
-  /*
-  grid-column: span 2;
   grid-column-start: 3;
-  */
+  grid-column-end: 5;
 }
 
 .element-2 {
