@@ -11,6 +11,13 @@ console.clear();
 
 // --v-- write your code here --v--
 
+let title = "New Post";
+let text = "Exciting things have happened ...";
+let numberOfLikes = 1000;
+const author = "Jane";
+let isReported = "true"
+
+
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +25,12 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+console.log(title)
+console.log(text)
+console.log(numberOfLikes)
+console.log(author)
+console.log(isReported)
 
+numberOfLikes += 1;
+console.log(numberOfLikes)
 // --^-- write your code here --^--
