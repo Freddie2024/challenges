@@ -63,6 +63,10 @@ body {
   position: relative;
 }
 
+#top.card {
+  margin-top: 100px;
+}
+
 .card__heading {
   margin: 0 0 10px 0;
 }
