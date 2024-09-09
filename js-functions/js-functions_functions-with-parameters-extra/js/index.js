@@ -40,5 +40,10 @@ printCircumference(6);
 
 // Uncomment the following function calls and implement the function printRectangleArea
 
-// printRectangleArea(5, 7);
-// printRectangleArea(3, 4);
+function printRectangleArea(width, length) {
+   const area = width * length
+   console.log(area)
+}
+
+printRectangleArea(5, 7);
+printRectangleArea(3, 4);
