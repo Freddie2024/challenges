@@ -43,6 +43,16 @@ rating = rating - 2
 
 logBookData ()
 
+numberOfSales = numberOfSales + 100
+rating = rating + 2.5
+
+logBookData ()
+
+numberOfSales = numberOfSales + 1000
+rating = rating + 0.3
+
+logBookData ()
+
 // --^-- write your code here --^--
 
 /*
