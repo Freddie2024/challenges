@@ -36,12 +36,12 @@ author = "Mario",
 rating = 4.2,
 numberOfSales = 120
 
-console.log(title, author, rating, numberOfSales)
+logBookData ()
 
 numberOfSales = numberOfSales + 10
 rating = rating - 2
 
-console.log(title, author, rating, numberOfSales)
+logBookData ()
 
 // --^-- write your code here --^--
 
