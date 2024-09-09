@@ -7,11 +7,13 @@ console.log("Exercise 1:");
 */
 
 // Uncomment the next line of code and figure out why it does not work:
-// logText;
+//logText;
 
 function logText() {
   console.log("This text does not appear. Why?");
 }
+
+logText ();
 
 console.log("-------------");
 console.log("Exercise 2:");
