@@ -36,3 +36,7 @@ grayButton.addEventListener("click", () => {
 });
 
 // Write your two functions below:
+
+function removeAllColors {
+  box.classList.remove("red", "blue", "green", "gray");
+}
