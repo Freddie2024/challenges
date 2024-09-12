@@ -30,13 +30,14 @@ form.addEventListener("submit", (event) => {
   console.log("isChecked", isChecked);
   if (isChecked) {
     hideTosError();
-    
+    showSuccess();
     form.reset();
     alert("Form submitted");
     return;
   }
   
   showTosError();
+  hideSuccess();
   // --^-- write your code here --^--
 
   // eslint-disable-next-line no-alert
