@@ -37,20 +37,21 @@ teaser.innerHTML =
       </div>
       <footer class="product__footer">
         <span class="product__price">${price}</span>
-        <button type="button" class="product__buy-button">Buy</button>
+        <button type="button" id="button2" class="product__buy-button">Buy</button>
       </footer>
     </article>`;
-
-
 
 const button = document.querySelector("button");
 
 const firstFish = "Anemonefish";
 const firstPrice = "15.99 €";
 
-
 button.addEventListener("click", () => {
   console.log(firstFish, firstPrice);
-})
+});
 
-;
+const secondButton = document.querySelector("#button2");
+
+secondButton.addEventListener("click", () => {
+  console.log(fishname, price);
+});
