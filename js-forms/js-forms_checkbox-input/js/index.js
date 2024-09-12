@@ -22,6 +22,16 @@ function hideSuccess() {
   successMessage.setAttribute("hidden", true);
 }
 
+hideTosError();
+hideSuccess();
+
+tosCheckbox.addEventListener("input", (event) => {
+  if (event.target.checked) {
+  hideTosError(tosError); 
+} else {
+  showTosError(tosError)};
+});
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
