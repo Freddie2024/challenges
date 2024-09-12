@@ -19,18 +19,37 @@ function showSuccess() {
 
 function hideSuccess() {
   successMessage.setAttribute("hidden", true);
+}
+
+hideTosError();
+hideSuccess();
+
+tosCheckbox.addEventListener("input", (event) => {
+  if (event.target.checked) {
+  hideTosError(tosError); 
+} else {
+  showTosError(tosError)};
+});
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-const isChecked = tosCheckbox.checked;
-if (isChecked) {
-  hideTosError();
-  showSuccess();
-  form.reset();
-  alert("Form submitted");
-  return;
-}
-hideSuccess();
-showTosError();  
+  // --v-- write your code here --v--
+  const isChecked = tosCheckbox.checked;
+  console.log("isChecked", isChecked);
+  if (isChecked) {
+    hideTosError();
+    showSuccess();
+    form.reset();
+    alert("Form submitted");
+    return;
+  }
+  
+  showTosError();
+  hideSuccess();
+  // --^-- write your code here --^--
+
+  // eslint-disable-next-line no-alert
+
 });
+  
