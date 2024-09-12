@@ -41,8 +41,16 @@ teaser.innerHTML =
       </footer>
     </article>`;
 
+
+
 const button = document.querySelector("button");
 
-button.addEventListener("click", (event) => {
-  console.log("fishname, price");
-});
+const firstFish = "Anemonefish";
+const firstPrice = "15.99 €";
+
+
+button.addEventListener("click", () => {
+  console.log(firstFish, firstPrice);
+})
+
+;
