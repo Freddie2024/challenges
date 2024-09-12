@@ -31,7 +31,4 @@ form.addEventListener("submit", (event) => {
 
   // eslint-disable-next-line no-alert
 });
-  // --^-- write your code here --^--
-
-  // eslint-disable-next-line no-alert
   
