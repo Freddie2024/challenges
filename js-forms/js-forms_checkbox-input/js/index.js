@@ -5,7 +5,7 @@ const tosError = document.querySelector('[data-js="tos-error"]');
 const tosCheckbox = document.querySelector('[data-js="tos"]');
 
 function hideTosError() {
-  tosError.setAttribute("hidden", "");
+  tosError.setAttribute("hidden", true);
 }
 
 function showTosError() {
