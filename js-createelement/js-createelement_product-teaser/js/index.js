@@ -40,3 +40,9 @@ teaser.innerHTML =
         <button type="button" class="product__buy-button">Buy</button>
       </footer>
     </article>`;
+
+const button = document.querySelector("button");
+
+button.addEventListener("click", (event) => {
+  console.log("fishname, price");
+});
