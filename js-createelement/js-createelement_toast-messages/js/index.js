@@ -9,10 +9,10 @@ addButton.addEventListener("click", (event) => {
   const newElement = document.createElement("li");
   toastContainer.append(newElement);
   newElement.classList.add("toast-container__message");
-
   newElement.textContent = "I'm a toast message.";
 });
 
-clearButton.addEventListener("click", () => {
+clearButton.addEventListener("click", (event) => {
   // Exercise: Clear the stack of toast messages
+  toastContainer.innerHTML = "";
 });
