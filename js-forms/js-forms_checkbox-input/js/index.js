@@ -14,6 +14,14 @@ function showTosError() {
   tosError.removeAttribute("hidden");
 }
 
+function showSuccess() {
+  successMessage.removeAttribute("hidden");
+}
+
+function hideSuccess() {
+  successMessage.setAttribute("hidden", true);
+}
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
