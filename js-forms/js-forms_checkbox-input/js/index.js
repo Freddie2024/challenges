@@ -16,9 +16,22 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   // --v-- write your code here --v--
-
+  const isChecked = tosCheckbox.checked;
+  console.log("isChecked", isChecked);
+  if (isChecked) {
+    hideTosError();
+    
+    form.reset();
+    alert("Form submitted");
+    return;
+  }
+  
+  showTosError();
   // --^-- write your code here --^--
 
   // eslint-disable-next-line no-alert
-  alert("Form submitted");
 });
+  // --^-- write your code here --^--
+
+  // eslint-disable-next-line no-alert
+  
