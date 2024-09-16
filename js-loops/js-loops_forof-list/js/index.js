@@ -19,4 +19,8 @@ const programmingLanguages = [
 
 // --v-- write/change code here --v--
 
+for (const li of programmingLanguages) {
+  ol.append(li);
+}
+
 // --^-- write/change code here --^--
