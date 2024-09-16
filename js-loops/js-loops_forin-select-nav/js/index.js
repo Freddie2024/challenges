@@ -22,6 +22,13 @@ main.append(select);
 
 // --v-- write/change code here --v--
 
+for (const languageCode in languages) {
+  const option = document.createElement("option");
+  option.value = languageCode;
+  option.textContent = languages[languageCode];
+  select.append(option);
+}
+
 // --^-- write/change code here --^--
 
 // Part 2: Creating a Navigation Bar
