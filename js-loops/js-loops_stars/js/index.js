@@ -20,13 +20,9 @@ function renderStars(filledStars) {
 
   });
 
-
-
     starContainer.append(starsImage);
   }
-
-
   //--^-- your code here --^--
 }
 
-renderStars(3);
+renderStars(0);
