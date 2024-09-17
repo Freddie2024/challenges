@@ -66,12 +66,21 @@ console.log(allTitlesInOneString)
 /*
  2: `filter` exercises
 */
-/*
-const recipesThatOnlyTake60minutesOrLess = null;
 
-const allRecipesWithMoreThan2Servings = null;
+const recipesThatOnlyTake60minutesOrLess = recipes.filter((recipe) => {
+  return recipe.duration <= 60;
+});
+console.log(recipesThatOnlyTake60minutesOrLess)
 
-const allRecipesWithTitlesLongerThan12Characters = null;
+const allRecipesWithMoreThan2Servings = recipes.filter((recipe) => {
+  return recipe.servings > 2;
+});
+console.log(allRecipesWithMoreThan2Servings)
+
+const allRecipesWithTitlesLongerThan12Characters = recipes.filter((recipe) => {
+  return recipe.title.length > 12;
+});
+console.log(allRecipesWithTitlesLongerThan12Characters)
 
 export {
   onlyTitles,
@@ -82,4 +91,3 @@ export {
   allRecipesWithMoreThan2Servings,
   allRecipesWithTitlesLongerThan12Characters,
 };
-*/
