@@ -27,3 +27,12 @@ colorElement.style.height = "10px";
 document.body.append(colorElement);
 });
 
+function renderColorBox(color) {
+const colorElement = document.createElement("div");
+colorElement.style.backgroundColor = color;
+colorElement.style.width = "10px";
+colorElement.style.height = "10px";
+document.body.append(colorElement);
+};
+
+colors.forEach(renderColorBox);
