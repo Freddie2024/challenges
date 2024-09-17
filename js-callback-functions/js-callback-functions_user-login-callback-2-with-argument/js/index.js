@@ -11,3 +11,8 @@ function showWelcomeMessage(userName) {
 }
 
 handleUserLogin(showWelcomeMessage)
+
+
+handleUserLogin(function(userName) {
+  console.log("Welcome " + userName + "! You are logged in now.");
+})
