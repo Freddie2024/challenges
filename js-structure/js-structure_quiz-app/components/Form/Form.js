@@ -1,3 +1,5 @@
+import handleFormSubmit from "../../utils/handleFormSubmit.js";
+
 export default function Form() {
     const form = document.createElement("form");
     form.classList.add("form");
@@ -42,6 +44,7 @@ export default function Form() {
       });
     });
   
+    form.addEventListener("submit", handleFormSubmit)
   
     return form;
   }
