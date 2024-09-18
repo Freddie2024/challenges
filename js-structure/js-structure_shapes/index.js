@@ -1,27 +1,19 @@
 import { getRandomColor } from "./utils/randomColor.js";
 import Circle from "./components/Circle/Circle.js";
+import Square from "./components/Square/Square.js";
+import Pentagon from "./components/Pentagon/Pentagon.js";
 
 console.clear();
 
 const root = document.getElementById("root");
 
-
-
 const circleElement = Circle();
+console.log("circleElement",circleElement);
 
+const squareElement = Square();
+console.log("squareElement",squareElement);
 
-console.log("circleElement",circleElement)
+const pentagonElement = Pentagon();
+console.log("pentagonElement",pentagonElement);
 
-const square = document.createElement("div");
-square.classList.add("square");
-square.addEventListener("click", () => {
-  square.style.backgroundColor = getRandomColor();
-});
-
-const pentagon = document.createElement("div");
-pentagon.classList.add("pentagon");
-pentagon.addEventListener("click", () => {
-  pentagon.style.backgroundColor = getRandomColor();
-});
-
-root.append(circleElement, square, pentagon);
+root.append(circleElement, squareElement, pentagonElement);
