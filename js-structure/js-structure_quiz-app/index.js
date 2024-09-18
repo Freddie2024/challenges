@@ -4,6 +4,7 @@ import Bookmark from "./components/Bookmark/Bookmark.js";
 import Card from "./components/Card/Card.js";
 import CardList from "./components/CardList/CardList.js";
 import {cards} from "./utils/cards.js";
+import App from "./components/App/App.js";
 
 
 const form = Form()
@@ -33,13 +34,7 @@ function handleFormSubmit(event) {
 }
 
 
-function App() {
-  const app = document.createElement("main");
-  app.classList.add("app");
-  app.append(Header(), Form(), CardList());
 
-  return app;
-}
 
 // The render function renders the app to the DOM
 function render() {
