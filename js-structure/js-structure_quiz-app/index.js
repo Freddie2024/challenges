@@ -8,8 +8,6 @@ import App from "./components/App/App.js";
 import handleFormSubmit from "./utils/handleFormSubmit.js";
 import render from "./components/App/render.js";
 
-
 const form = Form()
-form.addEventListener("submit", handleFormSubmit)
 
 render();
