@@ -5,6 +5,8 @@ console.clear();
 // Make sure to export your variable as in the example below to make the tests work.
 
 const item = ["Egg", 0.25, 12];
+const [name, price, quantity] = item;
+console.log(name, price, quantity)
 
 // example: export const [value1, value2] = array;
 
@@ -12,24 +14,33 @@ const item = ["Egg", 0.25, 12];
 // Use array destructuring to extract the variables "firstNameOfChris", "lastNameOfChris" and "ageOfChris".
 
 const personChris = [12, "Chris", "Owen"];
+const [ageOfChris, firstNameOfChris, lastNameOfChris] = personChris
+console.log(ageOfChris, firstNameOfChris, lastNameOfChris)
 
 // EXERCISE 3
 // Use array destructuring to extract the variables "firstNameOfAlex" and "lastNameOfAlex".
 // Make sure not to have unused variables.
 
 const personAlex = ["Alex", 12, "Main"];
+const [firstNameOfAlex, , lastNameOfAlex] = personAlex;
+console.log(firstNameOfAlex, lastNameOfAlex)
+
 
 // EXERCISE 4
 // Use array destructuring to extract the last name from the array
 // as variable called "lastName".
 
 const students = ["Christina", "Jon", "Alexandare"];
+const [ , , lastName] = students
+console.log(lastName)
 
 // EXERCISE 5
 // Use array destructuring to extract all of the names from this nested array.
 // Assign the given order of students to variables called "student1" to "student5".
 
 const nestedStudents = ["Chris", ["Ahmad", "Antigoni"], ["Toby", "Sam"]];
+const [student1, [student2, student3], [student4, student5]] = nestedStudents;
+console.log(student1, student2, student3, student4, student5)
 
 // EXERCISE 6
 // Spread the values of the values array into the function call of the add function.
@@ -37,13 +48,15 @@ const nestedStudents = ["Chris", ["Ahmad", "Antigoni"], ["Toby", "Sam"]];
 
 const values = [1, 6, 7, 9, 12, 5, 4];
 
-const result = add(1); // Spread values inside this function call
+const result = add(...values); // Spread values inside this function call
 
 function add(...values) {
   return values.reduce(
     (previousValue, currentValue) => previousValue + currentValue
   );
 }
+
+console.log(result)
 
 // EXERCISE 7
 // Write a function reverseArrayWithoutMutating that takes an array as an argument and returns a new array containing all of the items that are in the array that was passed in but in reverse order. 
@@ -57,7 +70,13 @@ function add(...values) {
 // Keep in mind that you need to export the function 'reverseArrayWithoutMutating' to make the test work.
 
 const arr = [1, 2, 3];
-export function reverseArrayWithoutMutating(arr) {
+export function reverseArrayWithoutMutating(arr, index = arr.length - 1) {
+  if (index < 0) {
+    return [];
+  }
+  const lastElement = arr[index];
+  const restReversed = reverseArrayWithoutMutating(arr, index - 1);
+  return [lastElement, ...restReversed];
   // write your code here
 }
 const reverseArr = reverseArrayWithoutMutating(arr);
@@ -77,6 +96,7 @@ console.log(arr); // Should still log [1, 2, 3]
 const array1 = [3, 6, 1];
 const array2 = [8, 5, 2];
 export function mergeAndSortArrays(array1, array2) {
+ return [...array1, ...array2].sort((a, b) => a - b);
   // write your code here
 }
 const mergedAndSorted = mergeAndSortArrays(array1, array2);
