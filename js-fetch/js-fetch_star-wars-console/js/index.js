@@ -10,7 +10,12 @@ async function fetchData() {
 			return;
         }
         const data = await response.json(); 
-        console.log(data);     
+        console.log(data);   
+
+        data.results.forEach(person => {
+            console.log(person.name);
+         })
+        
 } catch (error) {
     console.log('Error in fetch: ', error);
 }
