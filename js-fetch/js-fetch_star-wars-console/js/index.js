@@ -9,12 +9,15 @@ async function fetchData() {
 			console.log('Response not ok');			
 			return;
         }
-        const data = await response.json(); 
-        console.log(data);   
+        const people = await response.json(); 
+        console.log(people);   
 
-        data.results.forEach(person => {
+        people.results.forEach(person => {
             console.log(person.name);
-         })
+         });
+
+        const eyeColor = people.results[2]["eye_color"];
+        console.log("eyeColor:", eyeColor)
         
 } catch (error) {
     console.log('Error in fetch: ', error);
