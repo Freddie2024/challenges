@@ -12,6 +12,9 @@ const company = {
 
 // example: export const {value1} = myObject;
 
+export const { name, course, location } = company;
+console.log(company.name)
+
 // EXERCISE 2
 // We have an object called 'user'.
 // Write the destructuring assignment that reads:
@@ -19,7 +22,16 @@ const company = {
 //  2.2: 'years' property into the variable 'age'.
 //  2.3: 'isAdmin' property into the variable 'isAdmin' (false, if no such property exists)
 
-const user = { name: "John", years: 30 };
+
+
+const user = { userName: "John", years: 30 };
+
+const { userName, years: age, isAdmin = false } = user;
+console.log(userName);
+console.log(age);
+console.log(isAdmin);
+
+
 
 // EXERCISE 3
 // Extract the variables from the dog object and
@@ -31,6 +43,11 @@ const dog = {
   age: 5,
 };
 
+const { name: dogName, breed: dogBreed, age: dogAge } = dog;
+console.log(dogName)
+console.log(dogBreed)
+console.log(dogAge)
+
 // EXERCISE 4
 // Extract the 'lastName' property from the person object as "personLastName".
 // Store all other properties in an object called "moreInformation".
@@ -41,6 +58,11 @@ const person = {
   firstName: "Alex",
 };
 
+const { lastName: personLastName, ... moreInformation } = person;
+console.log(personLastName)
+console.log(moreInformation)
+
+
 // EXERCISE 5
 // Rewrite the following function (logInfo) to use destructuring assignment for the three variables it creates:
 
@@ -48,7 +70,7 @@ const logInfo = (city) => {
   const name = city.name;
   const country = city.country;
   const numPeople = city.population;
-
+  
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`
 }
 
@@ -56,10 +78,12 @@ const destructuringLogInfo = (city) => {
   // (Hint: Lines 48-50 should be replaced with a single line and you shouldn't change anything else).
   // your code here
 
-
+  const { name, country, population: numPeople } = city;
+  console.log(city)
   // your code here
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`
+ 
 }
 
 // This is how you would call it:
- destructuringLogInfo({ name: "Marseille", country: "France", population: 861635 });
+ console.log(destructuringLogInfo({ name: "Marseille", country: "France", population: 861635 }));
