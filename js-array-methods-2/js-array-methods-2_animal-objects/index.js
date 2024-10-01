@@ -25,7 +25,10 @@ const animals = [
       "South-America",
     ],
   },
-  { name: "elephant", weight: 4000, continents: ["Africa", "Asia"] },
+  { name: "elephant", 
+    weight: 4000, 
+    continents: 
+    ["Africa", "Asia"] },
   {
     name: "rabbit",
     weight: 2,
@@ -79,6 +82,7 @@ const animals = [
 
 // Hint: Besides the array method, check out the string method `startsWith()`.
 const firstAnimalStartingWithLetterG = animals.find((animal) => animal.name.startsWith("g"));
+
 console.log("firstAnimalStartingWithLetterG", firstAnimalStartingWithLetterG);
 
 const indexOfAnimalWithNameLongerFive = animals.findIndex((animal) => animal.name.length > 5);
@@ -93,20 +97,11 @@ console.log("indexOfAnimalWithNameLongerFive", indexOfAnimalWithNameLongerFive);
 // Hint: sort() mutates the original array, which is bad.
 // -> Use animals.slice().sort(...) to make a copy (and the tests work).
 
-const animalsSortedAlphabetically = animals.slice().sort((a, b) => a.name.localeCompare(b.name));
-  /*
-  {
-const nameA = a;
-const nameB = b;
-if (nameA < nameB) {
-  return -1;
-}
-if (nameA > nameB) {
-  return 1;
-}
-return 0;
+const animalsSortedAlphabetically = animals.slice().sort((a, b) => {
+  if (a.name < b.name) return -1;
+  if (a.name > b.name) return 1;
+  return 0;
 });
-*/
 console.log("animalsSortedAlphabetically", animalsSortedAlphabetically)
 
 const animalsSortedByWeightStartingWithLowest = animals.slice().sort((a, b) => a.weight - b.weight);
