@@ -25,7 +25,10 @@ const animals = [
       "South-America",
     ],
   },
-  { name: "elephant", weight: 4000, continents: ["Africa", "Asia"] },
+  { name: "elephant", 
+    weight: 4000, 
+    continents: 
+    ["Africa", "Asia"] },
   {
     name: "rabbit",
     weight: 2,
@@ -78,9 +81,11 @@ const animals = [
 ];
 
 // Hint: Besides the array method, check out the string method `startsWith()`.
-const firstAnimalStartingWithLetterG = null;
+const firstAnimalStartingWithLetterG = animals.find((animal) => animal.name.startsWith("g"));
+console.log("firstAnimalStartingWithLetterG", firstAnimalStartingWithLetterG)
 
-const indexOfAnimalWithNameLongerFive = null;
+const indexOfAnimalWithNameLongerFive = animals.findIndex((animal) => animal.name.length > 5);
+console.log("indexOfAnimalWithNameLongerFive", indexOfAnimalWithNameLongerFive)
 
 // Note:
 // - Sorting strings is slightly more complicated than sorting numbers.
@@ -91,7 +96,28 @@ const indexOfAnimalWithNameLongerFive = null;
 // Hint: sort() mutates the original array, which is bad.
 // -> Use animals.slice().sort(...) to make a copy (and the tests work).
 
-const animalsSortedAlphabetically = null;
+// const animalsSortedAlphabetically = animals.slice().sort();
+// console.log("animalsSortedAlphabetically", animalsSortedAlphabetically)
+
+/*
+const strings = ["Xbox", "PlayStation", "GameBoy"];
+strings.sort((a, b) => {
+  const nameA = a.toLowerCase();
+  const nameB = b.toLowerCase();
+  if (nameA < nameB) {
+    return -1;
+  }
+  if (nameA > nameB) {
+    return 1;
+  }
+  return 0;
+});
+console.log(strings); // ['GameBoy', 'PlayStation', 'Xbox']
+*/
+
+const animalsSortedAlphabetically = animals.sort((a, b) => {
+  
+})
 
 const animalsSortedByWeightStartingWithLowest = null;
 
