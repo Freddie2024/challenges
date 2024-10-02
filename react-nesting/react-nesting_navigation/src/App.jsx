@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Navigation from "./components/Navigation";
 import "./App.css";
 
 import avatar from "./assets/avatar.jpg";
@@ -11,7 +12,7 @@ export default function App() {
         <a href="#">
           <img className="round-image" src={logo} alt="logo" />
         </a>
-        <nav>
+        <Navigation>
           <a className="navigation__link" href="#home">
             Home
           </a>
@@ -21,7 +22,7 @@ export default function App() {
           <a className="navigation__link" href="#impressum">
             Impressum
           </a>
-        </nav>
+        </Navigation>
         <button
           type="button"
           onClick={() => console.log("I could toggle a profile!")}
