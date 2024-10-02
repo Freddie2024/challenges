@@ -1,5 +1,5 @@
 import "./App.css";
 
 export default function App() {
-  return <div>Say hello...</div>;
+  return <h1>Replace me with your component!</h1>;
 }
