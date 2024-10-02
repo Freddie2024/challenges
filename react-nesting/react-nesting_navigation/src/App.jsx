@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import Link from "./components/Link";
+
 import "./App.css";
 
 import avatar from "./assets/avatar.jpg";
