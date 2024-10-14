@@ -1,14 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 import { volumes } from "@/lib/data";
 
 export function DetailPage({ volumeData, currentIndex }) {
-    const { title, description, books, cover } = volumeData;
 
     if (!volumeData) {
-        return <p>Keine Daten verfügbar.</p>; // Fallback für den Fall, dass volumeData undefiniert ist
+        return <p>Keine Daten verfügbar.</p>; 
     }
-
+    
+    const { title, description, books, cover } = volumeData;
+    
     const nextIndex = currentIndex + 1 < volumes.length ? currentIndex + 1 : null;
     const nextVolume = nextIndex !== null ? volumes[nextIndex] : null;
 
@@ -17,6 +19,9 @@ export function DetailPage({ volumeData, currentIndex }) {
 
   return (
     <div>
+        <Head>
+            <title>{title}</title>
+         </Head>
         <Link href={"/volumes"}>← All Volumes</Link>
         <h1>{title}</h1>
         <p>{description}</p>
