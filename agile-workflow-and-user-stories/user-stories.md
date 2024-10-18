@@ -1,6 +1,6 @@
 ### User Stories 1-2-3-List-App
 
-## User Story 1
+## User Story 1: Basic 1-2-3-List
 
 ### Value proposition
 
@@ -32,7 +32,7 @@ So that **I can manage my workload efficiently and focus on my most critical tas
 
 ---
 
-## User Story 2
+## User Story 2: Handle completed tasks
 
 ### Value proposition
 
@@ -63,7 +63,7 @@ So that **I can track my daily progress and adjust my workload when necessary**.
 
 ---
 
-## User Story 3
+## User Story 3: Long-term goals
 
 ### Value proposition
 
