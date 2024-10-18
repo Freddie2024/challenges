@@ -553,3 +553,81 @@ So that **I can stay concentrated on my tasks while visually tracking the time r
 - [ ] Test the functionality to verify that the timers display accurately and that the focus mode enhances the user experience.
 
 ---
+
+Here’s a User Story for the motivational quotes feature with customizable categories based on personal values or long-term goals:
+
+---
+
+## User Story 17: Motivational Quotes Based on Personal Values or Selected Categories
+
+### Value proposition
+
+As a **user**,  
+I want to **receive motivational quotes daily or with a refresh button**,  
+So that **I can stay motivated and inspired while working on my tasks, either through quotes tailored to my personal values or based on other selected categories**.
+
+### Description
+
+- Users can choose to display motivational quotes **instead of or in addition to their long-term goals**.
+- Quotes can be refreshed daily or on-demand via a **refresh button**.
+- During account creation or later in the settings, users can select from different quote categories, including:
+  - **Personal values** (determined through a third-party website and entered into the app).
+  - Other categories such as **Sport, Literature, Mindfulness, Feminism**, etc.
+- The app uses an API (such as [Quotable](https://quotable.io) or another quotes API) to retrieve quotes based on the user's selected categories or values.
+
+### Acceptance criteria
+
+- [ ] What happens when the user chooses to display motivational quotes?  
+       The app should prompt the user to select either personal values-based quotes or from other available categories (e.g., Sport, Literature, etc.).
+- [ ] How does the app help users identify personal values?  
+       The app should link to a third-party website that helps users identify their top 3 personal values, which can then be used to select relevant quotes.
+- [ ] What happens when users press the refresh button?  
+       The app should retrieve and display a new motivational quote based on the selected category or values.
+- [ ] How can users change their quote preferences?  
+       Users should be able to modify their quote preferences (values or categories) through the settings menu.
+
+### Tasks
+
+- [ ] Integrate a quotes API (e.g., Quotable or a suitable alternative) to retrieve motivational quotes.
+- [ ] Build a feature that allows users to select quote categories either during account creation or in the settings.
+- [ ] Provide an option to display motivational quotes daily or with a refresh button.
+- [ ] Implement a link to a third-party website for determining personal values, and enable users to input their values into the app.
+- [ ] Test the feature to ensure the quotes are retrieved and displayed based on the selected preferences, and that the refresh function works correctly.
+
+---
+
+## User Story 18: Customizable Design Based on Quote Categories, Personal Values, or User Preferences
+
+### Value proposition
+
+As a **user**,  
+I want to **customize the app’s design based on my selected quote categories, personal values, or independent preferences**,  
+So that **the app’s look and feel reflect my personality and motivations, providing a more engaging and personalized experience**.
+
+### Description
+
+- The app’s design (including **color scheme, icons, and background images**) will adapt based on the user’s chosen categories for motivational quotes or personal values.
+  - For example:
+    - **Sport**: Bold colors, active icons, and dynamic backgrounds.
+    - **Feminism**: Empowering icons, modern color palette.
+    - **Mindfulness**: Soft colors, calming icons, tranquil backgrounds.
+- If users opt out of displaying motivational quotes, they can still **manually select a design theme**.
+- Users can change the theme in the settings, either linked to quotes/values or as an independent aesthetic preference.
+
+### Acceptance criteria
+
+- [ ] What happens when a user selects motivational quotes?  
+      The app’s design should adjust based on the selected category or values, changing the **color scheme, icons, and background** to match the chosen theme.
+- [ ] What happens when a user opts not to display quotes?  
+      The app should allow users to manually select a design theme based on available categories (e.g., Sport, Feminism, Mindfulness) or other independent aesthetic options.
+- [ ] Can the user change the design later?  
+      Users should be able to update their design preferences in the settings, either linked to new quotes/categories or independently.
+
+### Tasks
+
+- [ ] Design multiple theme options (color schemes, icons, backgrounds) that match the various motivational categories and values (e.g., Sport, Feminism, Mindfulness, etc.).
+- [ ] Build a system that applies these designs dynamically based on the user’s quote preferences or manual theme selection.
+- [ ] Ensure that users can choose a theme independent of motivational quotes if no quotes are selected.
+- [ ] Test the functionality to confirm that design changes apply correctly and that users can update their theme preferences smoothly.
+
+---
