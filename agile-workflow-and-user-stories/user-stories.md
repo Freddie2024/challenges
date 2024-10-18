@@ -92,8 +92,6 @@ So that **I can stay focused on bigger objectives while managing daily tasks**.
 - [ ] Implement the ability to edit, update, and remove goals.
 - [ ] Test for seamless integration of goal adjustments with daily tasks.
 
-Das ist eine tolle Idee! Hier ist eine User Story für die "Endlose To-Do-Liste", basierend auf deinem Schema und der ersten Version der Funktion, die einfacher gehalten ist:
-
 ---
 
 ## User Story 4: Endless To-Do List (Basic Version)
@@ -166,10 +164,6 @@ So that **I can easily focus on the most important tasks based on their category
 
 ---
 
-Das ist eine großartige Erweiterung, die die Flexibilität zwischen der täglichen 1-2-3-Liste und der endlosen To-Do-Liste erhöht! Hier sind zwei überarbeitete User Stories, die diese neuen Funktionen berücksichtigen:
-
----
-
 ## User Story 6: Selecting Tasks from Endless To-Do List for the Daily 1-2-3 List
 
 ### Value proposition
@@ -237,8 +231,6 @@ So that **I can stay organized and ensure tasks that are not completed still rem
 - [ ] Test that tasks retain their details (time estimate, description) when moved between lists.
 
 ---
-
-Um eine einfache App innerhalb von 3 Tagen fertigzustellen, solltest du dich auf die essenziellen Funktionen konzentrieren und diese in klare User Stories unterteilen. Basierend auf den bereits erstellten User Stories und der grundlegenden Struktur, könnten die folgenden Stories noch fehlen:
 
 ## User Story 8: Log-in
 
@@ -366,10 +358,6 @@ So that **I can customize the app to suit my preferences**.
 
 ---
 
-Hier ist eine User Story für die Implementierung verschiedener Farbschemata, einschließlich Dark Mode:
-
----
-
 ## User Story 12: Color Scheme and Dark Mode
 
 ### Value proposition
@@ -406,10 +394,6 @@ So that **I can customize the app's appearance based on my preferences and reduc
 
 ---
 
-Here is the updated User Story in English, with the specified point removed:
-
----
-
 ## User Story 13: Adjustable Time Windows with Fixed Structure and 6 Hours Total Time
 
 ### Value proposition
@@ -438,10 +422,6 @@ So that **I can ensure my daily tasks fit within my available time, while still 
 - [ ] Create alerts to inform users if the total time is not 6 hours.
 - [ ] Design an interface that allows users to easily adjust task times and see how time is being allocated.
 - [ ] Test the system to verify that task times always add up to 6 hours and that the structure (1 large, 2 medium, 3 small tasks) is maintained.
-
----
-
-Here’s the updated User Story, incorporating the requirement that users are prompted to choose their language during account creation:
 
 ---
 
@@ -475,10 +455,6 @@ So that **I can use the app in the language I am most comfortable with**.
 - [ ] Ensure all text and alerts are translated accurately into both English and German based on the selected language.
 - [ ] Save the user’s language preference in the app’s settings.
 - [ ] Test the functionality to ensure that the selected language applies to all text and alerts during and after account creation.
-
----
-
-Here’s the revised User Story that allows users to choose between the default Pomodoro intervals of either 50-10 or 20-5:
 
 ---
 
@@ -554,10 +530,6 @@ So that **I can stay concentrated on my tasks while visually tracking the time r
 
 ---
 
-Here’s a User Story for the motivational quotes feature with customizable categories based on personal values or long-term goals:
-
----
-
 ## User Story 17: Motivational Quotes Based on Personal Values or Selected Categories
 
 ### Value proposition
@@ -617,11 +589,11 @@ So that **the app’s look and feel reflect my personality and motivations, prov
 ### Acceptance criteria
 
 - [ ] What happens when a user selects motivational quotes?  
-      The app’s design should adjust based on the selected category or values, changing the **color scheme, icons, and background** to match the chosen theme.
+       The app’s design should adjust based on the selected category or values, changing the **color scheme, icons, and background** to match the chosen theme.
 - [ ] What happens when a user opts not to display quotes?  
-      The app should allow users to manually select a design theme based on available categories (e.g., Sport, Feminism, Mindfulness) or other independent aesthetic options.
+       The app should allow users to manually select a design theme based on available categories (e.g., Sport, Feminism, Mindfulness) or other independent aesthetic options.
 - [ ] Can the user change the design later?  
-      Users should be able to update their design preferences in the settings, either linked to new quotes/categories or independently.
+       Users should be able to update their design preferences in the settings, either linked to new quotes/categories or independently.
 
 ### Tasks
 
