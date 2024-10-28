@@ -17,14 +17,32 @@ export default function Product() {
     return;
   }
 
+  const { name, description, price, currency, reviews } = data;
   return (
     <ProductCard>
-      <h2>{data.name}</h2>
-      <p>Description: {data.description}</p>
+      <h2>{name}</h2>
+      <p>Description: {description}</p>
       <p>
-        Price: {data.price} {data.currency}
+        Price: {price} {currency}
       </p>
+      {reviews && reviews.length > 0? (
+      <>
+      <h2>Reviews:</h2>
+      <ul>
+        {reviews.map(({ _id, title, text, rating }) => (
+          <li key={_id}>
+            <h4>{title}</h4>
+            <p>{text}</p>
+            <p>{rating}</p>
+          </li>
+        ))}
+      </ul>
+    </>
+    ) : (
+      <p>No reviews available.</p>
+    )}     
       <StyledLink href="/">Back to all</StyledLink>
     </ProductCard>
   );
 }
+
