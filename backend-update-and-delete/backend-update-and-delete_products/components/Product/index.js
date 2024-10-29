@@ -3,12 +3,15 @@ import { useRouter } from "next/router";
 import { ProductCard } from "./Product.styled";
 import { StyledLink } from "../Link/Link.styled";
 import Comments from "../Comments";
+import { useState } from "react";
+import ProductForm from "../ProductForm";
 
 export default function Product() {
   const router = useRouter();
   const { id } = router.query;
+  const [isEditMode, setIsEditMode] = useState(false);
 
-  const { data, isLoading } = useSWR(`/api/products/${id}`);
+  const { data, isLoading, mutate } = useSWR(`/api/products/${id}`);
 
   if (isLoading) {
     return <h1>Loading...</h1>;
@@ -18,6 +21,41 @@ export default function Product() {
     return;
   }
 
+  async function handleEditProduct(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const productData = Object.fromEntries(formData);
+
+    const response = await fetch(`/api/products/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(productData),
+    });
+
+    if (response.ok) {
+      mutate();
+    }
+  }
+
+  async function handleDeleteProduct(id) {
+    const response = await fetch(`/api/products/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (response.ok) {
+      await response.json();
+      router.push("/");
+    } else {
+      console.error("Failed to delete the product:", response.status);
+      return;
+    }
+  }
+
   return (
     <ProductCard>
       <h2>{data.name}</h2>
@@ -25,6 +63,23 @@ export default function Product() {
       <p>
         Price: {data.price} {data.currency}
       </p>
+      <button
+        type="button"
+        onClick={() => {
+          setIsEditMode(!isEditMode);
+        }}
+      >
+        Edit Fish
+      </button>
+      {isEditMode && (
+        <ProductForm
+          onSubmit={handleEditProduct}
+          heading={"Edit Fish Details"}
+        />
+      )}
+      <button type="button" onClick={() => handleDeleteProduct(id)}>
+        Delete Fish
+      </button>
       {data.reviews.length > 0 && <Comments reviews={data.reviews} />}
       <StyledLink href="/">Back to all</StyledLink>
     </ProductCard>
